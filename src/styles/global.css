@@ -87,23 +87,20 @@ h3 {
 	padding: 0;
 }
 
-img {
-	max-width: 100%;
-}
-
 .individual-project {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	
 }
 
-figure {
-	padding: 4px;
-	margin: 4px;
+img {
+	width: 100%;
 }
 
-figcaption {
-	padding: 12px;
-	font-size: 12px;
+.individual-project > div {
+	background-color: #f1f1f1;
+	width: 32%;
+	margin: 10px;	
 }
 
 summary {
@@ -114,15 +111,10 @@ summary {
 	padding-bottom: 10px;
 }
 
-.details {
-	flex-direction: column;
-	width: 50%;
-	margin: 0 auto;
-	padding-bottom: 60px;
-}
-
 footer {
+	margin-top: 40px;
 	padding: 30px;
+    bottom:0%;
 }
 
 @media (max-width: 1300px) {

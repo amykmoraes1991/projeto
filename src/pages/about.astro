@@ -1,54 +1,71 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
-const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Amy",
-  country: "Brasil",
-  occupation: "Web designer",
-  hobbies: ["Traveling", "Singing", "Going out w/ friends"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-    <style>
-        h1 {
-          color: purple;
-          font-size: 4rem;
-        }
-      </style>
-  </head>
-  <body>
-    <Navigation />
-    <h1>{pageTitle}</h1>
-    <h2>... and my new Astro site!</h2>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>amy moraes - product designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+<body>
+	
+	<header>	
+		<Navigation />
+		
+		<div class="box-about" id="about">
+			
+			<h1>amy moraes</h1>
+			<h2><em>web designer</em></h2>
+			<p>I am a brazilian web designer currently based in lisbon, portugal. graduated in graphic design, with a postgraduate degree in UX, and specializing in digital experience design, i have been working as a web designer for 10 years, primarily focusing on building landing pages, social media assets, and email marketing.</p>
+			
+		</div>
+		
+	</header>
+	
+	<main>
+		
+		<div class="individual-project" id="projects">
+			<figure>
+				<img src="src/img/gabi-cezar.jpg" alt="blog interface design - gabi cezar">
+				<figcaption>
+					gabi cezar<br>
+					blog interface design<br>
+					2020
+				</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="src/img/credito-vc.jpg" alt="web interface design - credito.vc">
+				<figcaption>
+					crédito.vc<br>
+					web interface design<br>
+					2018
+				</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="src/img/credito-vc.jpg" alt="social media assets - ludi presentes">
+				<figcaption>
+					ludi presentes<br>
+					social media assets<br>
+					2017				
+				</figcaption>
+			</figure>
+							
+		</div>
+		
+	</main>
+	
+	  <Footer />
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-
-    <p>Here are a few facts about me:</p>
-    <ul>
-          <li>My name is {identity.firstName}.</li>
-          <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-          {identity.hobbies.length >= 2 &&
-              <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-          }
-    </ul>
-    
-    <p>My skills are:</p>
-    <ul>
-          {skills.map((skill) => <li>{skill}</li>)}
-    </ul>
-
-
-
-  </body>
+	
+	
+</body>
 </html>

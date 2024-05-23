@@ -1,13 +1,14 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<title>amy moraes - web designer</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<title>amy moraes - product designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
@@ -16,92 +17,25 @@ import '../styles/global.css';
 <body>
 	
 	<header>	
-		<nav class="nav-menu">
-			<ul class="menu">
-				<li><a href="#about">intro</a></li>
-				<li><a href="#projects">projects</a></li>
-				<li><a href="#get-in-touch">get in touch</a></li>
-			</ul>		
-		</nav>
+		<Navigation />
 		
 		<div class="box-about" id="about">
 			
 			<h1>amy moraes</h1>
-			<h2><em>web designer</em></h2>
-			<p>I am a brazilian web designer currently based in lisbon, portugal. graduated in graphic design, with a postgraduate degree in UX, and specializing in digital experience design, i have been working as a web designer for 10 years, primarily focusing on building landing pages, social media assets, and email marketing.</p>
+			<h2><em>product designer</em></h2>
+			<p>I'm a product designer with over a decade of experience in design and a background in digital marketing. My expertise allows me to craft user-centered design solutions while aligning with digital marketing objectives.
+
+			<p>With a degree in Graphic Design from UNIVALI (Brazil), a postgraduate degree in UX from Anhembi Morumbi University (Brazil), and ongoing studies in Digital Experience Design at the Faculty of Fine Arts, University of Lisbon (Portugal), I continuously enhance my skills and knowledge.</p>
+				
+			<p>I strive to create innovative solutions tailored to user needs, leveraging research, processes, and tools.</p>
 			
 		</div>
 		
-		<div class="details">
-			<details>
-				<summary>work experience &darr;</summary>
-				<p>web designer · leadmedia · brazil · remote · mar 2023 - currently</p>
-				
-				<p>web designer · B4B ventures · brazil · aug 2018 - dec 2021</p>
-				
-				<p>web designer  · incuca · brazil · jun 2017 - apr 2018</p>
-			</details>
-			
-			<details>
-				<summary>education &darr;</summary>
-				<p>digital experience design · belas artes (ulisboa) · portugal · in progress</p>
-				
-				<p>user experience design · anhembi morumbi · brazil · 2020</p>
-				
-				<p>graphic design  · univali · brazil · 2017</p>
-			</details>
-		</div>
-
 	</header>
 	
-	<main>
-		
-		<div class="individual-project" id="projects">
-			<figure>
-				<img src="src/img/gabi-cezar.jpg" alt="blog interface design - gabi cezar">
-				<figcaption>
-					gabi cezar<br>
-					blog interface design<br>
-					2020
-				</figcaption>
-			</figure>
-			
-			<figure>
-				<img src="src/img/credito-vc.jpg" alt="web interface design - credito.vc">
-				<figcaption>
-					crédito.vc<br>
-					web interface design<br>
-					2018
-				</figcaption>
-			</figure>
-			
-			<figure>
-				<img src="src/img/ludi-presentes.jpg" alt="social media assets - ludi presentes">
-				<figcaption>
-					ludi presentes<br>
-					social media assets<br>
-					2017				
-				</figcaption>
-			</figure>
-							
-		</div>
-		
-	</main>
 	
 	
-	<footer>
-		<div id="get-in-touch">
-			
-			<ul class="social-media">
-				<li><a href="https://www.linkedin.com/in/amykatherine" target="_blank">linkedin</a></li>
-				<li><a href="https://www.behance.net/amykatherine" target="_blank">behance</a></li>
-				<li><a href="mailto:amy.km@hotmail.com">e-mail</a></li>
-			</ul>
-			
-			<h3>amy moraes, 2024. all rights reserved ©</h3>
-			
-		</div>
-	</footer>	
+	<Footer />	
 	
 </body>
 </html>
