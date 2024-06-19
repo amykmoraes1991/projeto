@@ -238,10 +238,14 @@ input[type=submit]:hover, .bt:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 749px) {
-.single-project-slider-description > div {
-	width: 100%;;
-	
-}
+	.single-project-slider-description > div {
+		width: 100%;;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
 }
 
 @media (max-width: 479px) {
@@ -283,6 +287,10 @@ input[type=submit]:hover, .bt:hover {
 
 	.menu li {
 		padding-right: 22px;
+	}
+
+	body {
+		overflow-x: hidden;
 	}
 
 
