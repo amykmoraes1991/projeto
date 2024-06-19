@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import '../styles/gallery.theme.css';
+import '../styles/gallery.min.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>amy moraes - product designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<header>	
+		<Navigation />
+		
+		<div class="box-about" id="about">
+			
+			<h1>gabi cezar blog</h1>
+		
+		</div>
+		
+	</header>
+
+	<div class="single-project-slider-description">	
+		<div class="gallery autoplay items-2">
+
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+
+            <figure class="item">
+                <h1><img src="img/interface-design-blog-gabi-cezar.jpg" alt="interface design for the blog of a holistic therapist"></h1>
+            </figure>
+
+            <figure class="item">
+                    <h1><img src="img/interface-design-blog-gabi-cezar-02.jpg" alt="interface design for the blog of a holistic therapist"></h1>
+            </figure>
+
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+            </div>
+
+        </div>
+
+		<div class="description-single-project">
+
+			<p>
+				this project was a freelance job where the goal was to propose a new visual design for the blog of this holistic therapist. she already had her entire visual identity established, so it was only necessary to create the structure of the new interface and apply her personal brand concepts.
+            </p>
+			
+			<p>
+				<strong>project name:</strong> gabi cezar<br>
+				<strong>institution:</strong> freelancer<br>
+				<strong>areas of exploration:</strong> interface design<br>
+				<strong>year of completion:</strong> 2020<br>
+			</p>
+
+	
+		</div>
+
+	</div>
+	
+	
+    <Footer />
+  
+		
+</body>
+</html>
+
