@@ -17,22 +17,43 @@ import Footer from '../components/Footer.astro';
 <body>
 	
 	<header>	
+		
 		<Navigation />
 		
 		<div class="box-about" id="about">
 			
 			<h1>get in touch</h1>
-			<p>lorem ipsum dolor sit amet</p>
+			<p>drop me a message to discuss the best way to kickstart your project.</p>
 			
 		</div>
 		
 	</header>
+    
+
+	<main>
+
+		<div class="container-form">
+
+			<form action="#">
+	  
+			 	<label for="name">name:*</label>
+		 	 	<input type="text" id="name" name="name" placeholder="first and last name" required>
+
+		 	 	<label for="name">e-mail:*</label>
+		 	 	<input type="email" id="email" name="email" placeholder="the email you use the most" required>
+
+		 	 	<label for="message">message*</label>
+		  	 	<textarea id="message" name="message" placeholder="what are you looking for?" required></textarea>
+	  
+			  	<input type="submit" value="submit message">
+	  
+			</form>
+
+	 	 </div>
 	
-	
+	</main>
 	
     <Footer />
   
-	
-	
 </body>
 </html>

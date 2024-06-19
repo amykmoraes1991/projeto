@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+import '../styles/gallery.theme.css';
+import '../styles/gallery.min.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>amy moraes - product designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<header>	
+		<Navigation />
+		
+		<div class="box-about" id="about">
+			
+			<h1>cabin mate</h1>
+		
+		</div>
+		
+	</header>
+
+	<div class="single-project-slider-description">	
+		<div class="gallery autoplay items-3">
+
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item">
+                <h1><img src="img/interface-design-case-study-cabin-mate.jpg" alt="user interface case study - cabinmate"></h1>
+            </figure>
+
+            <figure class="item">
+                    <h1><img src="img/interface-design-case-study-cabin-mate-02.jpg" alt="user interface case study - cabinmate"></h1>
+            </figure>
+
+            <figure class="item">
+                <h1><img src="img/interface-design-case-study-cabin-mate-03.jpg" alt="user interface case study - cabinmate"></h1>
+            </figure>
+
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+                <a href="#item-3" class="control-button">.</a>
+            </div>
+
+        </div>
+
+		<div class="description-single-project">
+
+			<p>
+				this project was part of the user interface subject, within the digital design course at the faculty of fine arts of the university of lisbon. the objective was to choose a product and create a website to sell it, focusing on interface design and the development of a design system.
+			</p>
+			
+			<p>
+				<strong>project name:</strong> cabin mate<br>
+				<strong>institution:</strong> faculty of fine arts, university of lisbon<br>
+				<strong>areas of exploration:</strong> interface design, design system<br>
+				<strong>year of completion:</strong> 2023<br>
+				<strong>notes:</strong> individual project
+			</p>
+
+			<p>
+				you can see more details of this project by <a href="https://www.behance.net/gallery/189999125/FBAUL-user-interface-case-study-design-system" target="_blank">the link to my behance.</a>
+			</p>
+
+		</div>
+
+	</div>
+	
+	
+    <Footer />
+  
+		
+</body>
+</html>

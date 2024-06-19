@@ -1,44 +1,65 @@
+:root {
+	--cor-principal-fonte: #464646;
+	--cor-background: #EDEDED;
+	--cor-secundaria: #ff7474;
+	--cor-bco: #fff;
+	--cor-preto: #000;
+  }
+
 body {
 	font-family: 'Courier Prime', monospace;
-	color: #464646;
+	color: var(--cor-principal-fonte);
 	text-align: center;
 	padding: 0;
     margin: 0;
-	background-color: #EDEDED;
+	background-color: var(--cor-background);
 	overflow-x: hidden;
+	font-size: 16px;
 }
 
 a {
-	color: #000;
+	color: var(--cor-preto);
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 0.875em;
+	transition: all 1s;
 }
 
 a:hover {
-	color: #ff7474;
+	color: var(--cor-secundaria);
 }
 
 p {
-	font-size: 14px;
+	font-size: 0.875em;
 	line-height: 160%;
-	margin-top: 20px;
 }
 
 h1 {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 80px;
+	font-size: 5em;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #000;
-	color: #EDEDED;
+	-webkit-text-stroke-color: var(--cor-preto);
+	color: var(--cor-background);
 	padding: 0;
 	margin: 0;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
 }
 
+@keyframes example {
+	from {
+		-webkit-text-stroke-color: var(--cor-preto);}
+	to {
+		-webkit-text-stroke-color: var(--cor-secundaria);}
+  }
+
 h2 {
-	font-size: 12px;
+	font-size: 0.75em;
 	font-weight: 200;
 	letter-spacing: 6px;
-	color: #ff7474;
+	color: var(--cor-secundaria);
 }
 
 h3 {
@@ -47,7 +68,7 @@ h3 {
 
 .nav-menu {
 	top: 0;
-	padding: 12px;
+	padding: 0.75em;
 	width: 100%;
 	background-color: #E6E6E6;
 }
@@ -70,6 +91,12 @@ h3 {
 	
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
 .social-media {
 	list-style-type: none;
 	display: flex;
@@ -87,7 +114,8 @@ h3 {
 }
 
 .individual-project > div {
-	width: 24%;	
+	width: 33%;	
+
 }
 
 summary {
@@ -113,7 +141,7 @@ footer {
 .container img {
 	width: 100%;
 	transform: translateY(0);
-	transition: 1s;
+	transition: 0.8s;
 }
 
 .container:hover img {
@@ -130,8 +158,8 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
-	background-color:#464646;
+	color: var(--cor-bco);
+	background-color:#ffd0d0;
 	transform: translateY(-100%);
 	transition: 1s;
 }
@@ -141,28 +169,91 @@ footer {
 }
 
 .caption p {
-	font-size: 18px;
-	text-transform: capitalize;
+	font-size: 0.875em;
+	text-transform: lowercase;
 }
 
-@media (max-width: 1300px) {
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding: 0.75em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: 'Courier Prime', monospace;
+  }
+  
+input[type=submit], .bt {
+	background-color: var(--cor-secundaria);
+	color: var(--cor-bco);
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: 'Courier Prime', monospace;
+	transition: all 2s;
+  }
+  
+input[type=submit]:hover, .bt:hover {
+	background-color: #ffa2a2;
+  }
+  
+.container-form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: left;
+	width: 50%;
+	margin: auto;
+  }
+
+.container-form textarea {
+	height: 200px;
+}
+
+.item img {
+	max-width: 100%;
+}
+
+.single-project-slider-description {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.single-project-slider-description > div {
+	width: 30%;	
+
+}
+
+.description-single-project {
+	text-align: left;
+	margin-left: 20px;
+}
+
+.div-bt {
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 749px) {
+.single-project-slider-description > div {
+	width: 100%;;
 	
-	.individual-project {
-		flex-wrap: wrap;
-	}
 }
-
+}
 
 @media (max-width: 479px) {
 
 	.menu {
-    flex-direction: column;
-	padding-left: 40px;
-	padding-right: 40px;
+    flex-direction: row;
+	padding-left: 20px;
+	padding-right: 20px;
 	}
 	
 	h1 {
-		font-size: 42px;
+		font-size: 2.625em;
 	}
 	
 	.box-about {
@@ -179,10 +270,20 @@ footer {
 	}
 	
 	.social-media li a {
-		font-size: 10px;
+		font-size: 0.625em;
 	}
 
 	.individual-project > div {
 		width: 100%;
 	}
+
+	.container-form {
+		width: 80%;
+	}
+
+	.menu li {
+		padding-right: 22px;
+	}
+
+
 }
